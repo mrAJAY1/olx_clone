@@ -8,6 +8,8 @@ import View from "./Pages/ViewPost";
 import Loader from "./Components/Loader/Loader";
 import { Routes, Route } from "react-router-dom";
 import { useContext, useEffect } from "react";
+import PostContext from "./Contexts/postContexts";
+
 import { Contexts, FirebaseContext } from "./Contexts/Contexts";
 function App() {
   const { isLoading, setuser } = useContext(Contexts);
@@ -19,14 +21,16 @@ function App() {
   });
   return (
     <div>
-      {isLoading && <Loader />}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />4
-        <Route path="/login" element={<Login />} />
-        <Route path="/create" element={<Create />} />
-        <Route path="/view" element={<View />} />
-      </Routes>
+      <PostContext>
+        {isLoading && <Loader />}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup />} />4
+          <Route path="/login" element={<Login />} />
+          <Route path="/create" element={<Create />} />
+          <Route path="/view" element={<View />} />
+        </Routes>{" "}
+      </PostContext>
     </div>
   );
 }
