@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mrajay1.github.io/olx_clone/static/css/main.41d585e0.css",
+    "main.js": "/mrajay1.github.io/olx_clone/static/js/main.10d66282.js",
+    "static/media/olx-logo.png": "/mrajay1.github.io/olx_clone/static/media/olx-logo.b3f099a2fe7978c70944.png",
+    "index.html": "/mrajay1.github.io/olx_clone/index.html",
+    "main.41d585e0.css.map": "/mrajay1.github.io/olx_clone/static/css/main.41d585e0.css.map",
+    "main.10d66282.js.map": "/mrajay1.github.io/olx_clone/static/js/main.10d66282.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41d585e0.css",
+    "static/js/main.10d66282.js"
+  ]
+}
