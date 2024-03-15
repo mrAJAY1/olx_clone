@@ -11,7 +11,6 @@ function View() {
 
     const { userId } = postDetails
     firebase.firestore().collection('users').where('id', '==', userId).get().then((res) => {
-      
       res.forEach(element => {
         setUserDetails(element.data())
       });
